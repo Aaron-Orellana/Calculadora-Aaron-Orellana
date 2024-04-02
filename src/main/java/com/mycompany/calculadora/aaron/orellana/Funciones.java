@@ -88,7 +88,7 @@ public class Funciones {
     public void Palindrome(String s, int inicio, int fin ){
         if (inicio >= fin){ //si son iguales, quiere decir que corresponde a un palindrome
             System.out.println("Es un palindrome");
-        }else if (s.charAt(inicio) == s.charAt(fin)){
+        }else if (s.charAt(inicio) == s.charAt(fin)){ //charAt(indice) permite obtener el caracter en el indice indicado
             Palindrome(s, inicio + 1 , fin - 1);
         } else{
             System.out.println("No es Palindrome");
